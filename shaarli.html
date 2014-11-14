@@ -1,0 +1,23 @@
+{% if site.shaarli_url %}
+<section>
+  <h1>{{site.shaarli_title}}</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating...</li>
+  </ul>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if (!window.jXHR){
+        var jxhr = document.createElement('script');
+        jxhr.type = 'text/javascript';
+        jxhr.src = '{{ root_url}}/javascripts/libs/jXHR.js';
+      }
+      shaarli.showLinks({
+        url: '{{site.shaarli_url}}',
+        count: {{site.shaarli_count}},
+        target: '#gh_repos'
+      });
+  });
+  </script>
+  <script src="{{ root_url }}/javascripts/shaarli.js" type="text/javascript"> </script>
+</section>
+{% endif %}
