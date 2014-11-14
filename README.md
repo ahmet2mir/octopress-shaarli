@@ -9,7 +9,7 @@ Code is based on Github.js plugin
 Demo:
 -----
 
-http://ahmet2mir.github.io parse https://my.shaarli.fr/ahmet2mir
+http://ahmet2mir.github.io parse https://my.shaarli.fr/ahmet2mir/
 
 
 Installation:
